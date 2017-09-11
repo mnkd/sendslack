@@ -1,0 +1,10 @@
+hash: aeba164b2db44922cd4cd520dc4b8faa3b666bdbb77e1fd14e3090b69656317f
+updated: 2017-09-11T22:10:44.242172434+09:00
+imports:
+- name: github.com/mnkd/slackposter
+  version: 5348db02b914002e8ab4fdb8a5757195f4eac736
+  repo: git@github.com:mnkd/slackposter.git
+  vcs: git
+- name: github.com/pkg/errors
+  version: c605e284fe17294bda444b34710735b29d1a9d90
+testImports: []

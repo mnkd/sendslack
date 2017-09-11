@@ -1,0 +1,7 @@
+package: github.com/mnkd/sendslack
+import:
+  - package: github.com/mnkd/slackposter
+    vcs: git
+    version: ^1.0.0
+    repo: git@github.com:mnkd/slackposter.git
+  - package: github.com/pkg/errors
