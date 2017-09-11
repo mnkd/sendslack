@@ -40,7 +40,7 @@ func init() {
 		os.Exit(ExitCodeError)
 	}
 
-	if len(message) == 0 && len(os.Args) > 1 {
+	if len(message) == 0 && len(os.Args) == 2 {
 		message = os.Args[1]
 	}
 
