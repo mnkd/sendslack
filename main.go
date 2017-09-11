@@ -45,7 +45,6 @@ func init() {
 	}
 
 	if len(message) == 0 {
-
 		fmt.Fprintln(os.Stderr, "Message is empty. To send a message, input a message.")
 		os.Exit(ExitCodeError)
 	}
