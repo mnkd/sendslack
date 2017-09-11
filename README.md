@@ -21,6 +21,12 @@ $ sendslack -c config.json -m MESSAGE
 $ sendslack -m MESSAGE
 ```
 
+### Examples
+
+```
+$ sendslack 'hello world!
+```
+
 ## Configuration
 
 ### config.json
