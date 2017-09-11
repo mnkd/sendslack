@@ -33,7 +33,7 @@ $ sendslack -m MESSAGE
     {
       "team": "your-team",
       "channel": "#your-project",
-      "username": "Your-Bot-Name",
+      "username": "Your-Bot-Name",
       "icon_emoji": ":octocat:",
       "webhook_url": "https://hooks.slack.com/services/xxxxx/xxxxx/xxxxxx"
     }
