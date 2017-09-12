@@ -3,6 +3,7 @@ package main
 import (
 	"flag"
 	"fmt"
+	"io/ioutil"
 	"os"
 )
 
@@ -48,8 +49,15 @@ func init() {
 	}
 
 	if len(message) == 0 {
-		fmt.Fprintln(os.Stderr, "Message is empty. To send a message, input a message.")
-		os.Exit(ExitCodeError)
+		body, err := ioutil.ReadAll(os.Stdin)
+		if err == nil {
+			message = string(body)
+		}
+
+		if len(message) == 0 {
+			fmt.Fprintln(os.Stderr, "Message is empty. To send a message, input a message.")
+			os.Exit(ExitCodeError)
+		}
 	}
 
 	app.Channel = channel

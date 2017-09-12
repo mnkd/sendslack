@@ -1,5 +1,5 @@
 NAME     := sendslack
-VERSION  := 0.2.0
+VERSION  := 0.3.0
 REVISION := $(shell git rev-parse --short HEAD)
 LDFLAGS  := -ldflags="-X \"main.version=$(VERSION)\" -X \"main.revision=$(REVISION)\""
 
