@@ -40,7 +40,7 @@ $ sendslack -c CHANNEL -u USERNAME -i :smile: -m MESSAGE
 ### Examples
 
 ```
-$ sendslack 'hello world!
+$ sendslack 'hello world!'
 ```
 
 ```
