@@ -24,4 +24,10 @@ clean:
 install:
 	go install $(LDFLAGS)
 
-.PHONY: linux deps update format clean install
+zip:
+	tar zcvf bin/sendslack_v$(VERSION).tar.gz bin/$(NAME)
+
+digest:
+	openssl dgst -sha256 bin/sendslack_v$(VERSION).tar.gz
+
+.PHONY: linux deps update format clean install zip digest
