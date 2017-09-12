@@ -22,6 +22,10 @@ $ sendslack -C config.json -m MESSAGE
 $ sendslack -c CHANNEL -u USERNAME -i :smile: -m MESSAGE
 ```
 
+```
+$ date | sendslack
+```
+
 ### Options
 ```
 -C string
